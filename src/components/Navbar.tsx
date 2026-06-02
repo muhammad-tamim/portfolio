@@ -15,7 +15,7 @@ export default function Navbar() {
     const [isOpen, setIsOpen] = useState(false);
 
     return (
-        <header className="sticky top-0 z-50">
+        <header className="fixed top-0 left-0 w-full z-50">
             <nav className="mx-auto flex h-20 max-w-7xl items-center justify-between px-4 lg:px-8">
                 {/* Logo / Name */}
                 <Link href="/" className="text-xl font-bold tracking-tight text-white">
