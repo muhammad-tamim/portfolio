@@ -18,7 +18,7 @@ export default function Navbar() {
         <header className="fixed top-0 left-0 w-full z-50">
             <nav className="mx-auto flex h-20 max-w-7xl items-center justify-between px-4 lg:px-8">
                 {/* Logo / Name */}
-                <Link href="/" className="text-xl font-bold tracking-tight text-white">
+                <Link href="/" className="text-xl font-bold tracking-tight text-primary-content">
                     Muhammad Tamim
                 </Link>
 
@@ -30,7 +30,13 @@ export default function Navbar() {
                         </a>
                     ))}
 
-                    <a href="/resume.pdf" download className="btn bg-[#0f2b57] btn-sm text-white">
+
+                    {/* --color-primary: #5227FF; */}
+
+                    <a href="/resume.pdf" download className="btn bg-secondary btn-sm text-white">
+                        Download Resume
+                    </a>
+                    <a href="/resume.pdf" download className="btn bg-primary btn-sm text-white">
                         Download Resume
                     </a>
                 </div>

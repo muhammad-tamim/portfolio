@@ -1,2 +1,21 @@
 @import "tailwindcss";
-@plugin "daisyui";
+
+@plugin "daisyui" {
+    themes: dark --default;
+}
+
+@plugin "daisyui/theme" {
+    name: "portfolio";
+    default: true;
+    prefersdark: true;
+
+    --color-primary: #5227FF;
+    /* blue like */
+    --color-secondary: #30154A;
+    /* purple like */
+
+    --color-primary-content: #ffffff;
+    /* white */
+    --color-secondary-content: #dcb3fa;
+    /* light purple */
+}
