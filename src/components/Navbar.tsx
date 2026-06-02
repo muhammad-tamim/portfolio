@@ -15,7 +15,7 @@ export default function Navbar() {
     const [isOpen, setIsOpen] = useState(false);
 
     return (
-        <header className="fixed top-0 left-0 w-full z-50">
+        <header className="fixed top-0 z-50 left-0 w-full ">
             <nav className="mx-auto flex h-20 2xl:h-24 max-w-7xl 2xl:max-w-[1440px] items-center justify-between px-4 lg:px-8 2xl:px-12">
                 {/* Logo / Name */}
                 <Link href="/" className="text-xl 2xl:text-2xl font-bold tracking-tight text-primary-content">
@@ -32,7 +32,7 @@ export default function Navbar() {
                     ))}
 
 
-                    <a href="/resume.pdf" download className="btn bg-secondary btn-sm 2xl:btn-md text-primary-content">
+                    <a href="/resume.pdf" download className="btn bg-accent btn-sm 2xl:btn-md text-primary-content">
                         Download Resume
                     </a>
                 </div>
@@ -44,7 +44,7 @@ export default function Navbar() {
 
                 {/* Mobile Menu */}
                 {isOpen && (
-                    <div className="absolute left-0 top-full w-full bg-black/90 backdrop-blur-md md:hidden">
+                    <div className="absolute left-0 top-full w-full bg-accent/40 backdrop-blur-md md:hidden">
                         <div className="flex flex-col gap-2 p-4">
                             {navLinks.map((link) => (
                                 <a key={link.label} href={link.href} onClick={() => setIsOpen(false)}
