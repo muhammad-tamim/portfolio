@@ -16,33 +16,29 @@ export default function Navbar() {
 
     return (
         <header className="fixed top-0 left-0 w-full z-50">
-            <nav className="mx-auto flex h-20 max-w-7xl items-center justify-between px-4 lg:px-8">
+            <nav className="mx-auto flex h-20 2xl:h-24 max-w-7xl 2xl:max-w-[1440px] items-center justify-between px-4 lg:px-8 2xl:px-12">
                 {/* Logo / Name */}
-                <Link href="/" className="text-xl font-bold tracking-tight text-primary-content">
+                <Link href="/" className="text-xl 2xl:text-2xl font-bold tracking-tight text-primary-content">
                     Muhammad Tamim
                 </Link>
 
                 {/* Desktop Menu */}
-                <div className="hidden items-center gap-8 md:flex">
+                <div className="hidden items-center gap-8 2xl:gap-10 md:flex">
                     {navLinks.map((link) => (
-                        <a key={link.label} href={link.href} className="text-sm font-medium text-white/80 transition-colors hover:text-white">
+                        <a key={link.label} href={link.href}
+                            className="text-sm 2xl:text-base font-medium text-primary-content/80 transition-colors hover:text-primary-content hover:underline under">
                             {link.label}
                         </a>
                     ))}
 
 
-                    {/* --color-primary: #5227FF; */}
-
-                    <a href="/resume.pdf" download className="btn bg-secondary btn-sm text-white">
-                        Download Resume
-                    </a>
-                    <a href="/resume.pdf" download className="btn bg-primary btn-sm text-white">
+                    <a href="/resume.pdf" download className="btn bg-secondary btn-sm 2xl:btn-md text-primary-content">
                         Download Resume
                     </a>
                 </div>
 
                 {/* Mobile Menu Button */}
-                <button type="button" aria-label="Toggle menu" onClick={() => setIsOpen((prev) => !prev)} className="text-white md:hidden">
+                <button type="button" aria-label="Toggle menu" onClick={() => setIsOpen((prev) => !prev)} className="text-primary-content md:hidden">
                     {isOpen ? <HiX size={28} /> : <HiOutlineMenuAlt3 size={28} />}
                 </button>
 
@@ -52,7 +48,7 @@ export default function Navbar() {
                         <div className="flex flex-col gap-2 p-4">
                             {navLinks.map((link) => (
                                 <a key={link.label} href={link.href} onClick={() => setIsOpen(false)}
-                                    className="rounded-lg px-3 py-3 text-white/80 transition-colors hover:bg-white/10 hover:text-white">
+                                    className="rounded-lg px-3 py-3 text-primary-content/80 transition-colors hover:bg-white/10 hover:text-primary-content">
                                     {link.label}
                                 </a>
                             ))}
