@@ -31,8 +31,10 @@ export default function Navbar() {
                         </a>
                     ))}
 
-
-                    <a href="/resume.pdf" download className="btn bg-accent btn-sm 2xl:btn-md text-primary-content">
+                    <a
+                        href="/resume.pdf"
+                        download
+                        className="px-5 py-2 rounded-lg text-white text-sm font-medium bg-white/10 border border-white/20 backdrop-blur-md hover:bg-white/20 hover:border-white/30 transition duration-300">
                         Download Resume
                     </a>
                 </div>
@@ -53,7 +55,10 @@ export default function Navbar() {
                                 </a>
                             ))}
 
-                            <a href="/resume.pdf" download onClick={() => setIsOpen(false)} className="btn btn-primary mt-3">
+                            <a
+                                href="/resume.pdf"
+                                download
+                                className="px-5 py-2 rounded-lg text-white text-sm font-medium bg-white/10 border border-white/20 backdrop-blur-md hover:bg-white/20 hover:border-white/30 transition duration-300">
                                 Download Resume
                             </a>
                         </div>
