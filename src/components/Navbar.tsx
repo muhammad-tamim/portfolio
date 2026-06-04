@@ -18,7 +18,7 @@ export default function Navbar() {
         <header className="fixed top-0 z-50 left-0 w-full ">
             <nav className="mx-auto flex h-20 2xl:h-24 max-w-7xl 2xl:max-w-[1440px] items-center justify-between px-4 lg:px-8 2xl:px-12">
                 {/* Logo / Name */}
-                <Link href="/" className="text-xl 2xl:text-2xl font-bold tracking-tight text-primary-content">
+                <Link href="#hero" className="text-xl 2xl:text-2xl font-bold tracking-tight text-primary-content">
                     Muhammad Tamim
                 </Link>
 

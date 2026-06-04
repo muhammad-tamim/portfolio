@@ -14,7 +14,7 @@ const backend = ' Node.js, Express, PostgreSQL, MongoDB, Prisma, Mongoose, Docke
 
 export default function Hero() {
     return (
-        <div className="relative min-h-screen w-full overflow-hidden">
+        <div id="hero" className="relative min-h-screen w-full overflow-hidden">
 
             {/* Background */}
             <div className="absolute inset-0 z-0">
